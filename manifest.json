@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "GearBest autoSignIn",
+  "description": "Auto SignIn to GearBest.com via google account.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.gearbest.com/*"
+      ],
+      "js": [
+        "check.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://login.gearbest.com/*"
+      ],
+      "js": [
+        "google.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "https://*.gearbest.com/*"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "icons": {
+    "128": "128.png"
+  }
+}
