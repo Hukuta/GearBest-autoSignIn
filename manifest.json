@@ -6,6 +6,14 @@
   "content_scripts": [
     {
       "matches": [
+        "https://*.gearbest.com/"
+      ],
+      "js": [
+        "check.js"
+      ]
+    },
+    {
+      "matches": [
         "https://*.gearbest.com/*"
       ],
       "js": [
